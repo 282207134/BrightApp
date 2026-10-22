@@ -1,0 +1,13 @@
+Running Xcode build...                                          
+Xcode build done.                                            8.3s
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:58635/rKyTRBjKDiw=/
+VMServiceFlutterDriver: Isolate found with number: 2384997453294335
+VMServiceFlutterDriver: Isolate 2384997453294335 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+flutter: 00:00 +0: shopping journey and page screenshots on iPhone
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...
+flutter: 00:06 +1: (tearDownAll)
+flutter: 00:06 +2: All tests passed!
+All tests passed.

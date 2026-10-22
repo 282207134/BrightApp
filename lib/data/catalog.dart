@@ -1,0 +1,131 @@
+import 'models.dart';
+
+const products = [
+  Product('epic', 'EPIC-REACT', 13000, 'epic_react', label: 'FEATURED'),
+  Product('max', 'AIR-MAX-270', 15000, 'air_max_red', color: 0xffd99b88),
+  Product('pink', 'NIKE AIR-MAX', 17000, 'air_max_pink', color: 0xffee7c9f),
+  Product('force', 'NIKE AIR FORCE', 13000, 'air_force', color: 0xff282c35),
+  Product(
+    'laney',
+    'AIR JORDAN 5 LANEY JSP',
+    19000,
+    'jordan_laney',
+    brand: 'Jordan',
+    label: 'BEST SELLER',
+    color: 0xff438fd3,
+  ),
+  Product(
+    'hustle',
+    'HUSTLE-D-9-FLYEASE',
+    13020,
+    'hustle_red',
+    color: 0xffe45b5b,
+  ),
+  Product(
+    'green',
+    'AIR-MAX-270-BIG-KIDS',
+    19020,
+    'air_max_green',
+    color: 0xffa1d846,
+  ),
+  Product('kyrie', 'KYRIE-FLYTRAP-II', 15000, 'kyrie_blue', color: 0xff487bdc),
+  Product('oketo', 'NIKE AIR MAX OKETO', 6000, 'oketo_blue', color: 0xff5076b5),
+  Product(
+    'black',
+    'REVOLUTION 4 FLYEASE',
+    5500,
+    'revolution_black',
+    color: 0xff33383a,
+  ),
+  Product(
+    'grey',
+    'NIKE REVOLUTION 4',
+    4500,
+    'revolution_grey',
+    color: 0xffa5a5b0,
+  ),
+  Product(
+    'mamba',
+    'NIKE BLACK MAMBA',
+    12800,
+    'mamba_banner',
+    label: 'BEST SELLER',
+    color: 0xff282c35,
+  ),
+  Product(
+    'dress0',
+    'HALF SLEEVE DRESS',
+    8900,
+    'dress_red',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress1',
+    'FULL SLEEVE DRESS',
+    12000,
+    'dress_floral',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress2',
+    'OFF WHITE KAMIZ',
+    10900,
+    'dress_silver',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress3',
+    'RED T-SHIRT',
+    7200,
+    'onboard_red',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress4',
+    'URBAN HALF RED DRESS',
+    7200,
+    'dress_detail',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress5',
+    'LINEN DRESS',
+    10000,
+    'dress_pink',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress6',
+    'WHITE GOWN',
+    8000,
+    'dress_gold',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+  Product(
+    'dress7',
+    'GRAY WOOL SKIRT',
+    12000,
+    'dress_white',
+    brand: 'Bright',
+    category: 'fashion',
+  ),
+];
+final sneakerProducts = products
+    .where((p) => p.category == 'sneakers')
+    .toList();
+final fashionProducts = products.where((p) => p.category == 'fashion').toList();
+Product productById(String id) => products.firstWhere((p) => p.id == id);
+const colorways = [
+  'air_max_red',
+  'air_max_blue',
+  'air_max_black',
+  'air_max_lime',
+  'air_max_sand',
+];
